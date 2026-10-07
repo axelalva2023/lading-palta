@@ -217,6 +217,7 @@ footer{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 1em;
 }
 
@@ -233,6 +234,7 @@ footer div ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -322,10 +324,7 @@ footer p{
         }
     }
 
-    .wsp{
-        display: none;
-        
-    }
+    
 }
 
 
