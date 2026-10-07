@@ -271,6 +271,10 @@ footer p{
         display: block;
     }
 
+    .hero h1{
+        font-size: 2.2em;
+    }
+
     .menu-navegacion{
         display: none;
         position: absolute;
