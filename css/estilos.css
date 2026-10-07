@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(blueviolet, gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+header img{
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+header img:hover{
+    transform: scale(1.1);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li{
+    margin: 1em;
+}
+
+header nav ul li a:hover{
+    color: black;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+.hero{
+    height: calc(100vh - 84.06px);
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    color: white;
+    font-size: 3em;
+    border: 2px solid white;
+    padding: 1em;
+}
+
+.hero input{
+    font-size: 1.5em;
+    border-radius: 50%;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    margin-top: 0.5em;
+}
+
+.hero input:hover{
+    background-color: blueviolet;
+}
+
+.nosotros{
+    background: linear-gradient(blueviolet, gray);
+    padding: 2em;
+}
+
+.nosotros div img{
+    opacity: 0.8;
+}
+
+.contenedor-general-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.parrafo{
+    width: 50%;
+    font-size: 2em;
+}
+
+.servicios{
+    background: linear-gradient(blueviolet, gray);
+    padding: 2em;
+}
+
+.servicios div img{
+    opacity: 0.8;
+}
+
+.contenedor-general-servicios{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.productos{
+    background: linear-gradient(blueviolet, gray);
+}
+
+.contenedor-general-productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.contenedor-general-productos div{
+    border: 2px solid black;
+    text-align: center;
+    margin: 1em;
+    box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 15px rgba(0,0,0,0.75);
+}
+
+.contenedor-general-productos div:hover{
+    transform: scale(1.1);
+}
+.contenedor-general-productos div img{
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.contenedor-general-productos div input{
+    border-radius: 50%;
+    color: white;
+    padding: 0.5em;
+    background-color: black;
+}
+
+.contenedor-general-productos div input:hover{
+    background-color: blueviolet;
+}
+
+.separador{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contacto{
+    background: linear-gradient(blueviolet, gray);
+}
+
+.contenedor-general-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.modo-claro{
+    background-color: white;
+    padding: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+.contenedor-general-contacto div{
+    margin: 0.5em;
+}
+
+.botones{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 0.8em;
+}
+
+.botones:hover{
+    background-color: blueviolet;
+}
+
+.modo-oscuro{
+    background-color: black;
+    padding: 2em;
+    font-size: 2em;
+    text-align: center;
+    color: orange;
+}
+
+footer{
+    background: linear-gradient(blueviolet, gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+footer img{
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
+footer div ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+footer div ul li{
+    margin: 1em;
+}
+
+footer div ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer div ul li a:hover{
+    color:black;
+}
+
+footer p{
+    color: white;
+}
+
+.wsp{
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:500px){
+    #boton-hamburguesa{
+        display: none;
+    }
+
+    .icono-hamburguesa{
+        display: block;
+    }
+
+    .menu-navegacion{
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        flex-direction: column;
+        background-color: black;
+        box-sizing: border-box;
+    }
+
+    #boton-hamburguesa:checked ~ nav .menu-navegacion{
+        display: flex;
+    }
+
+    .contenedor-general-nosotros{
+        flex-direction: column;
+    }
+
+    .parrafo{
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .contenedor-general-servicios{
+        flex-direction: column;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    header{
+        position: static;
+    }
+
+    .contenedor-general-contacto{
+        .modo-claro{
+            font-size: 1.5em;
+        }
+        .modo-oscuro{
+            font-size: 1.5em;
+        }
+    }
+}
+
+

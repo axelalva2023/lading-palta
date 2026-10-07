@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Lading palta</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.jpg" alt="logo-pagina" width="150px">
+        <input type="checkbox" id="boton-hamburguesa" name="boton-haburguesa">
+        <label for="boton-hamburguesa" class="icono-hamburguesa">X</label>
+        <nav>
+            <ul class="menu-navegacion">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h1>Bienvenidos!</h1>
+            <a href="#contacto"><input type="button" value="PIDE YA"></a>
+                
+        </section>
+        <section class="nosotros" id="nosotros">
+            <div class="contenedor-general-nosotros">
+                <div>
+                    <img src="./img/nosotros.png" alt="foto-nosotros" width="400px">
+                </div>
+                <div class="parrafo">
+                    <h2>Nosotros:</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi neque error asperiores impedit aperiam quis beatae aliquid consequatur fugiat. Quisquam nisi laborum facere cumque dolorem, sapiente perspiciatis aperiam reprehenderit.</p>
+                </div>
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+             <div class="contenedor-general-servicios">
+                <div>
+                    <img src="./img/servicios.jpg" alt="foto-nosotros" width="400px">
+                </div>
+                <div class="parrafo">
+                    <h2>Servicios:</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi neque error asperiores impedit aperiam quis beatae aliquid consequatur fugiat. Quisquam nisi laborum facere cumque dolorem, sapiente perspiciatis aperiam reprehenderit.</p>
+                </div>
+            </div>
+        </section>
+        <section class="productos" id="productos">
+            <h2 class="separador">PRODUCTOS:</h2>
+            <div class="contenedor-general-productos">
+                <div>
+                    <img src="./img/card.jpg" alt="foto-producto" width="250px">
+                    <h3>Nombre</h3>
+                    <p>Precio</p>
+                    <input type="button" value="Comprar">
+                </div>
+                <div>
+                    <img src="./img/card.jpg" alt="foto-producto" width="250px">
+                    <h3>Nombre</h3>
+                    <p>Precio</p>
+                    <input type="button" value="Comprar">
+                </div>
+                <div>
+                    <img src="./img/card.jpg" alt="foto-producto" width="250px">
+                    <h3>Nombre</h3>
+                    <p>Precio</p>
+                    <input type="button" value="Comprar">
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <h4 class="separador">CONTACTO:</h4>
+            <div class="contenedor-general-contacto">
+                <div>
+                    <form id="formulario" class="modo-claro">
+                        <h4>Completar datos:</h4>
+                        <div>
+                            <label for="nombre">Ingrese su nombre:</label><input type="text" id="nombre" name="nombre" placeholder="Axel">
+                        </div>
+                        <div>
+                            <label for="apellido">Ingrese su apellido:</label><input type="text" id="apellido" name="apellido" placeholder="Cascardo">
+                        </div>
+                        <div>
+                            <label for="correo">Ingrese su email:</label><input type="text" id="correo" name="correo" placeholder="pepito@gmail.com">
+                        </div>
+                        <div><label for="producto">Ingrese el producto:</label><select name="producto" id="producto">
+                            <option>Bebidas</option>
+                            <option>Verduleria</option>
+                            <option>Electronica</option>
+                        </select></div>
+                        <div><input type="submit" value="Enviar datos" class="botones"></div>
+                        <div>
+                            <input type="button" value="Modo oscuro" class="botones" id="botonOscuro">
+                            <input type="button" value="Modo claro" class="botones" id="botonClaro">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8705989107793!2d-58.382421052749066!3d-34.61724793325133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb4a694ab7c1%3A0x576643d06c9ed774!2sEl%20rancherito!5e0!3m2!1ses-419!2sar!4v1764795609459!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./img/logo.jpg" alt="logo-pagina" width="150px">
+        <div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados &copy; 2026</p>
+    </footer>
+
+    <img src="./img/logo.jpg" alt="foto-wsp" width="150px" class="wsp">
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
